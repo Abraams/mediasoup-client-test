@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          button {
+            margin: 2px;
+          }
+          tr {
+            vertical-align: top;
+          }
+          video {
+            background: black;
+            width: 360px;
+            margin: 1px 1px;
+          }
+
+          .remoteVideo {
+            float: left;
+          }
+
+          .mainTable {
+            width: 100%;
+          }
+
+          .localColumn {
+            width: 480px;
+          }
+
+          .remoteColumn {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        </style>
+        <meta charset="utf-8" />
+        <title>Webpack App</title>
+    </head>
+
+    <body>
+        <div id="video">
+            <table class="mainTable">
+                <tbody>
+                    <tr>
+                        <td class="localColumn">
+                            <video id="localVideo" autoplay class="video" muted ></video>
+                        </td>
+                        <td class="remoteColumn">
+                            <div id="videoContainer"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
